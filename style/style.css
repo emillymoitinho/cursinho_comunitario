@@ -1,9 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
-::root { /* PALETA DE CORES */
+:root { /* PALETA DE CORES peguei inspirado da logo*/
+    /* O SITE VAI SER COMPOSTO SOMENTE POR VERMLEHO E BRANCO PARA COMBINAR COM A LOGO, POR ISSO UTILIZE ESSAS CORES: */
+    
+    --vermelho: #F22613;
+    --branco: #F2F2F2;
+    --vermelhoClaro: #F2594B;
+
+    /* PARA UTILIZAR ESSAS CORES:
+    EXEMPLO:
+        background-color: var(--branco);
+     */
 
 }
 

@@ -1,20 +1,110 @@
-* {
-    margin: 0;
-    padding: 0;
+    /* FONTE USADA NO SITE */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     
-}
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Outfit", sans-serif;
+        box-shadow: none;
+    }
 
-:root { /* PALETA DE CORES peguei inspirado da logo*/
-    /* O SITE VAI SER COMPOSTO SOMENTE POR VERMLEHO E BRANCO PARA COMBINAR COM A LOGO, POR ISSO UTILIZE ESSAS CORES: */
+    :root { /* PALETA DE CORES peguei inspirado da logo*/
+        /* O SITE VAI SER COMPOSTO SOMENTE POR VERMLEHO E BRANCO PARA COMBINAR COM A LOGO, POR ISSO UTILIZE ESSAS CORES: */
+        
+        --vermelho: #F22613;
+        --branco: #F2F2F2;
+        --vermelhoClaro: #F2594B;
+
+        /* PARA UTILIZAR ESSAS CORES:
+        EXEMPLO:
+            background-color: var(--branco);
+        */
+
+    }
+
+    /* BARRA DE NAVEGAÇÃO */
+
+    header {
+        position: relative;
+        display: flex;
+
+    }
+
+    header#logo {
+        float: right;
+    }
+
+   #logo img {
+        width: 10rem;
+        margin-right: 20rem;
+        margin-left: 3rem;
+    }
+    nav#menu {
+        height: 8vh;
+        padding-right: 5rem;
+        background-color: transparent;
+    }
     
-    --vermelho: #F22613;
-    --branco: #F2F2F2;
-    --vermelhoClaro: #F2594B;
+    nav#menu  ul {
+        list-style: none;
+        float: right;
+    }
 
-    /* PARA UTILIZAR ESSAS CORES:
-    EXEMPLO:
-        background-color: var(--branco);
-     */
+    nav#menu  ul li {
+        display: inline;
+        margin: 20px;
+    }
 
-}
+    #menu ul li a {
+        padding: 20px;
+        display: inline-block; 
+    }
 
+    #menu ul li a:hover {
+        background-color:beige;
+        transition: 0.4s all;
+    }
+
+
+    /* HOME - INICIO */
+    section#home {
+        width: 100%;
+        height: 100vh;
+        background: url('/images/inicio_alunos.jpg');
+        /* opacity : 0.8;  isso deixa mais transparente  */
+        background-size: cover;  
+        position: relative;
+    }
+
+    section#home > #conteiner {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--branco); 
+        text-align: center;
+    }
+
+    section#home > #conteiner h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    section#home > #conteiner a{
+        background: #fff;
+        color: #212121;
+        padding: 14px 25px;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    

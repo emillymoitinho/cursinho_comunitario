@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursinho Comunitário Pimentas</title>
-    <link rel="stylesheet" href="styles/style.css"> <!-- CSS LINKADO NO HTML-->
+    <title>Menu Centraliado</title>
+    <title>Texto sobre a Imagem</title>
+    <title>Centralizar Título</title>
+    <title>Logotipo no Topo Esquerdo</title>
+    <link rel="stylesheet" href="style/style.css"> <!-- CSS LINKADO NO HTML-->
 </head>
 <body>
     <!-- 
@@ -14,22 +18,29 @@
 
 
         <header> <!-- CABEÇALHO: VAI TER A BARRA DE NAVEGAÇÃO COM OS LINKS (NAV)-->
-            <a href="#" class="logo"></a> <!-- LOGO DO CURSINHO -->
-            <nav>
+            <div id="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div><!-- LOGO DO CURSINHO -->
+            <nav id="menu">
                 <ul>
-                    <li><a href="#inicio"></a></li>
-                    <li><a href="#sobre"></a></li>
-                    <li><a href="#galeria"></a></li>
-                    <li><a href="#noticias"></a></li>
-                    <li><a href="#depoimentos"></a></li>
-                    <li><a href="#contato"></a></li>
+                    <li><a href="#inicio"></a>Inicio</li>
+                    <li><a href="#sobre"></a>Sobre</li>
+                    <li><a href="#galeria"></a>Galeria</li>
+                    <li><a href="#noticias"></a>Noticías</li>
+                    <li><a href="#depoimentos"></a>Depoimento</li>
+                    <li><a href="#contato"></a>Contato</li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="inicio">
+            <section id="home">
                 <!-- SEÇÃO INÍCIO -->
+                 <div id="conteiner">
+                    <h1>Cursinho Comunitário Pimentas</h1>
+                    <a href="">Inscreva-se</a>
+                </div>
+                 
             </section>
 
             <section id="sobre">
@@ -56,6 +67,12 @@
                 <!-- RODAPÉ DA PÁGINA -->
             </footer>
         </main>
+        
+        <!-- <h1>Cursinho Comunitario Pimentas</h1>
+        
+        <img src="logo.cursinho.jpg" width="100px" height="100px">
+        <img src="inicio_alunos.jpg" width="1680px" height="1200px"> -->
+
 
 </body>
 </html>

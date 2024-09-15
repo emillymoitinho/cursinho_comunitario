@@ -80,7 +80,7 @@
         z-index: -1;
         width: 100%;
         height: 100vh;
-        background: url('/images/inicio_alunos.jpg');
+        background: url('../images/inicio_alunos.jpg');
         /* opacity : 0.8;  isso deixa mais transparente  */
         background-size: cover;  
         position: relative;

@@ -222,6 +222,41 @@
         color: rgb(255, 255, 255);
     }
 
+    /* DEPOIMENTOS */
+
+    section#depoimentos > .comment-box {
+        display: flex;
+        justify-content: center; 
+        align-items:normal;    
+        height: 500px;           
+        gap: 20px;               
+        overflow-y: auto;
+        padding: 10px;
+    }
+    
+    section#depoimentos >  h1, h2{
+        text-align: center;
+        color: brown;
+    }
+
+    section#depoimentos >  p{
+        text-align: center;
+    }
+
+    section#depoimentos >  div{
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       overflow-y: auto
+      }
+    
+    section#depoimentos > img {
+        display: block;
+        margin-bottom: 0;
+        max-width: 100%; 
+        height: auto;
+      }
+
     
     
 

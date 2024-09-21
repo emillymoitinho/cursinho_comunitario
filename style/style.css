@@ -234,7 +234,7 @@
     section#depoimentos > .titulo-principal p {
         text-align: center;
         margin-top: 20px;
-        padding: 5rem 5rem 0px 5rem;
+        padding: 2rem 25rem 0px;
     }
 
     section#depoimentos > article#alunos {
@@ -280,19 +280,21 @@
     /* NOTICIAS */
 
     section#contatos {
-        padding: 5rem;
+        padding: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     article#contato {
         display: grid;
-        grid-template-rows: "msg form";
-        grid-template-areas: 1 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "msg form";
+        gap: 5rem;
+        margin-top: 5rem;
     }
 
     aside#mensagem {
-        background-color: #ad3232;
-        width: 60vw;
-        padding: 3rem;
         grid-area: msg;
     }
 
@@ -310,9 +312,98 @@
         color: #000;
     }
 
+    aside#mensagem > div  {
+        display: flex;
+        gap: 10px;
+        width: 13vw;
+        justify-content: flex-end;
+        
+    }
+
     .material-symbols-outlined {
         padding-right: 10px;
     }
+
+    aside#form {
+        grid-area: form;
+    }
+
+    aside#form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside#form form > input {
+        margin-bottom: 1.5rem;
+        margin-top: 5px;
+        padding: 15px;
+        border: none;
+        background-color: rgba(255, 0, 0, 0.158);
+    }
+
+    aside#form form > textarea {
+        margin-top: 5px;
+        padding: 15px;
+        border: none;
+        background-color: rgba(255, 0, 0, 0.158);
+    }
+
+    aside#form form > #botao {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    input#reset {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--vermelhoClaro);
+        cursor: pointer;
+    }
+
+    input#submit {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(69, 204, 69);
+        cursor: pointer;
+    }
+
+    ul#horario  {
+        margin-left: 3rem;
+        list-style: none;
+    }
+
+    ul#horario span {
+        color: var(--vermelho);
+    }
+
+    #horario li {
+        margin-bottom: 10px;
+    }
+
+    .material-symbols-outlined {
+        color: var(--vermelho);
+    }
+
+    footer {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    footer div {
+        display: flex;
+        gap: 19.5rem;
+        padding: 10px;
+        
+    }
+
+    footer div p {
+        
+    }
+
 
 
 

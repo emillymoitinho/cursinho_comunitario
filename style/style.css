@@ -284,9 +284,19 @@
     }
 
     /* noticias */
+
+    section#noticias {
+        height: 80vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .container3 {
         display: flex;
         align-items: center;
+        padding: 150px;
      }
     
     .circulo{
@@ -305,8 +315,9 @@
     
     .whiteb{
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
+        padding: 20px;
     }
     
     .seta{

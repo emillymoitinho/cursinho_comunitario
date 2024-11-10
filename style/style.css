@@ -38,6 +38,7 @@
         width: 100%;
         height: 10vh;
         border-bottom: 5px solid red;
+        z-index: 1;
     }
 
     div#logo {
@@ -83,21 +84,19 @@
 
     /* HOME - INICIO */
     section#home {
-        z-index: -1;
+        position: relative;
         width: 100%;
         height: 100vh;
         background: url('../images/inicio_alunos.jpg');
-        /* opacity : 0.8;  isso deixa mais transparente  */
-        background-size: cover;  
-        position: relative;
+        background-size: cover; 
+
     }
 
     section#home > #conteiner {
-        display: block;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%);
         color: var(--branco); 
         text-align: center;
     }
@@ -121,6 +120,12 @@
         align-items: center;
         justify-content: center;
         text-decoration: none;
+    }
+
+    section#home > #conteiner a:hover {
+        background-color: var(--vermelho);
+        color: #fff;
+        transition: .3s;
     }
 
 
@@ -171,9 +176,13 @@
         grid-area: conteudo;
         align-self: center;
         line-height: 2;
-        font-size: 15px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    section#about .content p {
+        font-size: 1.2rem;
+        width: 50vw;
     }
 
     section#about .content a {

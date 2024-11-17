@@ -66,9 +66,8 @@
    stm.execute() ;
    stm.close() ;
 
-   out.print("<h3>Dados gravados!</h3>") ;
-   out.print("<br><br>") ;
-   out.print("<a href='formulario_cadastro.html'>Voltar</a>") ;
+   // Redireciona para a página de sucesso
+    response.sendRedirect("consulta.html");
 
 %>
 

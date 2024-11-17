@@ -20,11 +20,13 @@
             <h1>Inscrição Cursinho Comunitário Pimentas</h1>
             <p><strong>Preencha seus dados</strong></p>
             <p><strong>Em breve entraremos em contato</strong></p>
-            <p><strong>Em caso de dúvidas: (11) 2484-5700 ou (11) 99112-6849</strong></p>
+            <p><strong>Em caso de dúvidas: <span class="tel">(11) 2484-5700</span> ou <span class="tel">(11) 99112-6849</span></strong></p>
             </p>
             <!-- Input Nome Completo -->
-            <label for="nome-completo" id="label-nome">Nome Completo:</label>
-            <input type="text" id="nome-completo" name="nome-completo" required>
+            <div class="row">
+                <label for="nome-completo" id="label-nome">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
             <div class="row">
                 <!-- Input Data de Nascimento -->
                 <label for="data-nascimento">Data de Nascimento:</label>
@@ -33,10 +35,10 @@
                 <span id="genero">
                     <p>Sexo: </p>
                     <label>
-                        <input type="radio" name="sexo" id="sexo" value="F"> Feminino
+                        <input type="radio" name="sexo" id="sexo-feminino" value="F"> Feminino
                     </label>
                     <label>
-                        <input type="radio" name="sexo" id="sexo" value="M"> Masculino
+                        <input type="radio" name="sexo" id="sexo-masculino" value="M"> Masculino
                     </label>
                 </span>
             </div>
@@ -55,13 +57,15 @@
             </div>
 
             <!-- Input Nome da Mãe -->
-            <label for="nome-mae" id="label-mae">Nome da Mãe:</label>
-            <input type="text" id="nome-mae" name="nome-mae" required>
+                <label for="nome-mae" id="label-mae">Nome da Mãe: </label>
+                <input type="text" id="nome-mae" name="nome-mae" required>
 
-            <label for="nome-pai">Nome do Pai:</label>
-            <input type="text" id="nome-pai" name="nome-pai">
+            <br>
 
             <!-- Input Nome do Pai -->
+            <label for="nome-pai">Nome do Pai: </label>
+            <input type="text" id="nome-pai" name="nome-pai" required>
+
             <div class="row">
                 <label for="telefone">Telefone Fixo:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
@@ -69,21 +73,35 @@
                 <input type="cel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required>
             </div>
             <!-- Input Email -->
-            <label for="email" id="label-email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <span id="email">
+                <label for="email" id="label-email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </span>
 
             <br>
-            <!-- Input Comprovante de Endereco -->
-            <label for="comprovante-endereco">Faça upload do Comprovante de Endereço: </label>
-            <input type="file" name="comprovante-endereco" id="comprovante-endereco" accept=".pdf, .jpg">
+            <!-- Input Endereço -->
+                <div class="row">
+                    <label for="endereco">Endereço: </label>
+                    <input type="text" name="endereco" id="endereco">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro">
+                </div>
 
-            <!-- Input Declaração da Matrícula -->
-            <label for="declaracao-matricula" id="declaracao-matricula">Faça upload do Certificado de conclusão do Ensino Médio / Declaração de Matricula: </label>
-           <input type="file" name="declaracao-matricula" id="declaracao-matricula" accept=".pdf, .jpg">
+            <div class="row">
+                <label for="cep">CEP: </label>
+                <input type="number" name="cep" id="cep">
+
+                <label for="numero">Número: </label>
+                <input type="number" name="numero" id="numero">
+                
+                <label for="complemento">Complemento: </label>
+                <input type="text" name="complemento" id="complemento">
+            </div>
 
             <div class="button-container">
                 <button type="submit">Inscrever</button>
-            </div>
+            </div> 
+
         </form>
     </main>
 </body>

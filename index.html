@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,217 +12,251 @@
     <link rel="stylesheet" href="style/style.css"> <!-- CSS LINKADO NO HTML-->
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <!-- O LINK ABAIXO É PARA ADICIONAR ICONS DO GOOGLE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
     <!-- 
         MODELO: 
         https://edusity-tau.vercel.app/ 
      -->
 
-        <!-- CABEÇALHO: VAI TER A BARRA DE NAVEGAÇÃO COM OS LINKS (NAV)-->
-        <header> 
-            <!-- LOGO DO CURSINHO -->
-            <div id="logo">
-                <a href="#"><img src="images/logo.png" alt=""></a>
+    <!-- CABEÇALHO: VAI TER A BARRA DE NAVEGAÇÃO COM OS LINKS (NAV)-->
+    <header>
+        <!-- LOGO DO CURSINHO -->
+        <div id="logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <!-- LINKS -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#fundador">Fundador</a></li>
+                <li><a href="#depoimentos">Depoimento</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEUDO PRINCIPAL DO SITE -->
+    <main>
+        <!-- HOME  -->
+        <section id="home">
+            <!-- SEÇÃO INÍCIO -->
+            <div id="conteiner">
+                <h1>Cursinho Comunitário Pimentas</h1>
+                <a href="formulario_cadastro.html" target="_blank">Inscreva-se</a>
             </div>
-            <!-- LINKS -->
-            <nav id="menu">
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#fundador">Fundador</a></li>
-                    <li><a href="#depoimentos">Depoimento</a></li>
-                    <li><a href="#noticias">Notícias</a></li>
-                    <li><a href="#contatos">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+        </section>
 
-        <!-- CONTEUDO PRINCIPAL DO SITE -->
-        <main>
-            <!-- HOME  -->
-            <section id="home">
-                <!-- SEÇÃO INÍCIO -->
-                 <div id="conteiner">
-                    <h1>Cursinho Comunitário Pimentas</h1>
-                    <a href="formulario_cadastro.html" target="_blank">Inscreva-se</a>
+        <!-- SEÇÃO SOBRE NÓS -->
+        <section id="about">
+            <div class="titulo-principal">
+                <h1>Sobre Nós</h1>
+                <h3>Cursinho Comunitário Pimentas</h3>
+            </div>
+            <article class="container">
+                <div class="img">
+                    <img src="images/imgSobre.jpeg" alt="Alunos do Cursinho Comunitário Pimentas" width="400px">
                 </div>
-            </section>
+                <div class="content">
+                    <p> O Cursinho Comunitário Pimentas é um projeto social fundado em 2002 por professores da rede
+                        pública, com o objetivo de oferecer educação gratuita e de qualidade para jovens de baixa renda,
+                        visando seu ingresso em universidades renomadas como USP, UNICAMP, UNESP e federais. Criado pelo
+                        <a href="#fundador"><strong><a href="">Professor Rômulo Ornelas</a></strong></a>, o cursinho já
+                        ajudou milhares de alunos da periferia de Guarulhos, especialmente na região dos Pimentas e
+                        Bonsucesso.
 
-            <!-- SEÇÃO SOBRE NÓS -->
-            <section id="about">
-                <div class="titulo-principal">
-                    <h1>Sobre Nós</h1>
-                    <h3>Cursinho Comunitário Pimentas</h3>
+                        A iniciativa é mantida por voluntários, muitos deles ex-alunos e seus familiares, e se sustenta
+                        por meio de doações e coleta de materiais recicláveis. Além de preparar os jovens para o
+                        vestibular, o cursinho promove a formação cidadã, com aulas mensais sobre temas sociais e
+                        incentivando o papel transformador dos alunos na sociedade. Rômulo enfatiza a importância de
+                        formar profissionais que atuem em favor das classes oprimidas, com a crença de que todos têm
+                        potencial e merecem oportunidades iguais.</p>
                 </div>
-                 <article class="container">
-                    <div class="img">
-                        <img src="images/imgSobre.jpeg" alt="Alunos do Cursinho Comunitário Pimentas" width="400px">
-                    </div>
-                    <div class="content">
-                        <p> O Cursinho Comunitário Pimentas é um projeto social fundado em 2002 por professores da rede pública, com o objetivo de oferecer educação gratuita e de qualidade para jovens de baixa renda, visando seu ingresso em universidades renomadas como USP, UNICAMP, UNESP e federais. Criado pelo <a href="#fundador"><strong><a href="">Professor Rômulo Ornelas</a></strong></a>, o cursinho já ajudou milhares de alunos da periferia de Guarulhos, especialmente na região dos Pimentas e Bonsucesso.
+            </article>
+        </section>
 
-                        A iniciativa é mantida por voluntários, muitos deles ex-alunos e seus familiares, e se sustenta por meio de doações e coleta de materiais recicláveis. Além de preparar os jovens para o vestibular, o cursinho promove a formação cidadã, com aulas mensais sobre temas sociais e incentivando o papel transformador dos alunos na sociedade. Rômulo enfatiza a importância de formar profissionais que atuem em favor das classes oprimidas, com a crença de que todos têm potencial e merecem oportunidades iguais.</p>
-                    </div>
-                 </article>
-            </section>
+        <!-- GALERIA -->
+        <section id="galeria">
 
-            <!-- GALERIA -->
-            <section id="galeria">
-                
-                <h1>Galeria</h1> 
-                <h3>Fotos</h3>
-                <br>
-                <br>
-                <div class="container2">
-                    <img src="images/img1.jpg" width="300"></img>
-                    <img src="images/img2.jpg" width="300"></img>
-                    <img src="images/img3.png" width="300"></img>
-                    <img src="images/img4.jpg" width="300"></img>
-                </div>
-                <br>
-                <br>
-                <div class="more">
+            <h1>Galeria</h1>
+            <h3>Fotos</h3>
+            <br>
+            <br>
+            <div class="container2">
+                <img src="images/img1.jpg" width="300"></img>
+                <img src="images/img2.jpg" width="300"></img>
+                <img src="images/img3.png" width="300"></img>
+                <img src="images/img4.jpg" width="300"></img>
+            </div>
+            <br>
+            <br>
+            <div class="more">
                 <p>Veja mais-></p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FUNDADOR -->
+        <section id="fundador">
+            <div class="titulo-principal">
+                <h1>Fundador</h1>
+                <h3>Professor Rômulo</h2>
+            </div>
+            <article id="container">
+                <div id="img"><img src="images/prof_romulo.jpeg" alt="Professor Rômulo" title="Professor Rômulo"></div>
+                <div id="conteudo">
+                    <p>O Professor Rômulo nasceu no Vale do Jequitinhonha, em Minas Gerais, mudando-se para Guarulhos em
+                        1978 quando tinha 18 anos de idade, em busca de melhores oportunidades. Formou-se nos cursos de
+                        História e Geografia e tornou-se professor na rede estadual pública, lecionando na periferia da
+                        cidade.</p>
+                    <p>Em 2002, fundou o Cursinho Comunitário Pimentas, instituição que proporciona cursinho
+                        pré-vestibular gratuitamente para estudantes. Nestes mais de 20 anos de existência, milhares de
+                        jovens pobres ingressaram nas universidades.</p>
+                    <p>O Professor Rômulo dedica a vida a lutar por Justiça Social, por uma sociedade com serviços
+                        públicos de qualidade, com emprego e renda, sem fome e livre das desigualdades e da pobreza.</p>
+                    <p><strong>“Não adianta inserirmos o aluno na Universidade para ser profissional que não olhe para o
+                            pobre, porque para ser contra uma classe social que é oprimida já existem muitos por
+                            aí”</strong>, afirma Rômulo. </p>
                 </div>
-            </section>
+            </article>
+        </section>
 
-            <!-- SEÇÃO FUNDADOR -->
-            <section id="fundador">
-                <div class="titulo-principal">
-                    <h1>Fundador</h1>
-                    <h3>Professor Rômulo</h2>
+        <!-- SEÇÃO DEPOIMENTOS DOS ALUNOS -->
+        <section id="depoimentos">
+            <div class="titulo-principal">
+                <h1>Depoimentos</h1>
+                <h2>Avaliações dos Alunos</h2>
+                <p>Aqui, você encontrará histórias de alunos que participaram do Curso Comunitário Pimentas em Guarulhos
+                    e tiveram experiências transformadoras. Cada um deles compartilha um pouco sobre sua jornada, os
+                    desafios enfrentados e os benefícios que colheram ao longo do caminho. Esses depoimentos refletem a
+                    diversidade e o impacto real do curso na vida de cada participante, e esperamos que inspirem você a
+                    se juntar a nós.</p>
+            </div>
+            <article id="alunos">
+
+                <div class="aluno">
+                    <div class="center">
+                        <img src="images/perfil.png" alt="" width="50px">
+                        <h3 style="color: red;">Catarina Karla</h3>
+                    </div>
+                    <p>Um lugar maravilhoso, todos trabalham juntos se esforçam amo muito este lugar é indico para quem
+                        quer passar em uma universidade ou concurso.</p>
                 </div>
-                <article id="container">
-                    <div id="img"><img src="images/prof_romulo.jpeg" alt="Professor Rômulo" title="Professor Rômulo"></div>
-                    <div id="conteudo">
-                        <p>O Professor Rômulo nasceu no Vale do Jequitinhonha, em Minas Gerais, mudando-se para Guarulhos em 1978 quando tinha 18 anos de idade, em busca de melhores oportunidades. Formou-se nos cursos de História e Geografia e tornou-se professor na rede estadual pública, lecionando na periferia da cidade.</p>
-                        <p>Em 2002, fundou o Cursinho Comunitário Pimentas, instituição que proporciona cursinho pré-vestibular gratuitamente para estudantes. Nestes mais de 20 anos de existência, milhares de jovens pobres ingressaram nas universidades.</p>
-                        <p>O Professor Rômulo dedica a vida a lutar por Justiça Social, por uma sociedade com serviços públicos de qualidade, com emprego e renda, sem fome e livre das desigualdades e da pobreza.</p>
-                        <p><strong>“Não adianta inserirmos o aluno na Universidade para ser profissional que não olhe para o pobre, porque para ser contra uma classe social que é oprimida já existem muitos por aí”</strong>, afirma Rômulo. </p>
-                    </div>
-                </article>
-            </section>
 
-            <!-- SEÇÃO DEPOIMENTOS DOS ALUNOS -->
-            <section id="depoimentos">
-                <div class="titulo-principal">
-                    <h1>Depoimentos</h1>
-                    <h2>Avaliações dos Alunos</h2>
-                    <p>Aqui, você encontrará histórias de alunos que participaram do Curso Comunitário Pimentas em Guarulhos e tiveram experiências transformadoras. Cada um deles compartilha um pouco sobre sua jornada, os desafios enfrentados e os benefícios que colheram ao longo do caminho. Esses depoimentos refletem a diversidade e o impacto real do curso na vida de cada participante, e esperamos que inspirem você a se juntar a nós.</p>
+                <div class="aluno">
+                    <div class="center">
+                        <img src="images/perfil.png" alt="" width="50px">
+                        <h3 style="color: red;">Rodrigo</h3>
+                    </div>
+                    <p>Obrigada Professor Rômulo! Por sua causa sei que serei uma pessoa bem-sucedida.</p>
                 </div>
-                <article id="alunos">
+            </article>
+        </section>
 
-                    <div class="aluno">
-                        <div class="center">
-                            <img src="images/perfil.png" alt="" width="50px">
-                            <h3 style="color: red;">Catarina Karla</h3>
-                        </div>
-                        <p>Um lugar maravilhoso, todos trabalham juntos se esforçam amo muito este lugar é indico para quem quer passar em uma universidade ou concurso.</p>
-                    </div>
-
-                    <div class="aluno">
-                        <div class="center">
-                            <img src="images/perfil.png" alt="" width="50px">
-                            <h3 style="color: red;">Rodrigo</h3>
-                        </div>
-                        <p>Obrigada Professor Rômulo! Por sua causa sei que serei uma pessoa bem-sucedida.</p>
-                    </div>
-                </article>
-            </section>
-
-            <!-- NOTICIAS -->
-            <section id="noticias">
-              <br><br>  
-              <div class="titulo-principal">
+        <!-- NOTICIAS -->
+        <section id="noticias">
+            <br><br>
+            <div class="titulo-principal">
                 <h1>Notícias</h1>
                 <h2>Confira as novidades</h2>
-              </div>
-                <div class="container3">
-                    <div class="circulo">
-                        <p class="whiteb">Novas turmas será!! Janeiro/2025</p>
-                    </div>
-                    <img src="images/seta-vermelha-com-copia-espaco.png" width="200" class="seta"></img>
-                    <ul align="left" class="textnot">
-                        <li>Para a inscrição, basta se inscrever no site e anexar seus documento necessários e um comprovante de endereço, com um quilo de alimento não respeitável, e fazer sua matricula.</li>
-                        <li>Não precisa compra nenhum material como livros para a realização do curso pré-vestibular.</li>
-                        <li>O curso pré-vestibular não tem duração o aluno fica o tento necessário, até conseguir entra na universidade.</li>
-                    </ul>
+            </div>
+            <div class="container3">
+                <div class="circulo">
+                    <p class="whiteb">Novas turmas será!! Janeiro/2025</p>
                 </div>
-            </section>
+                <img src="images/seta-vermelha-com-copia-espaco.png" width="200" class="seta"></img>
+                <ul align="left" class="textnot">
+                    <li>Para a inscrição, basta se inscrever no <a href="formulario_cadastro.html"
+                            target="_blank">site</a> e anexar seus documento necessários e um comprovante de endereço,
+                        com um quilo de alimento não respeitável, e fazer sua matricula.</li>
+                    <li>Não precisa compra nenhum material como livros para a realização do curso pré-vestibular.</li>
+                    <li>O curso pré-vestibular não tem duração o aluno fica o tento necessário, até conseguir entra na
+                        universidade.</li>
+                </ul>
+            </div>
+        </section>
 
-                <!-- SEÇÃO ENTRE EM CONTATO -->
-            <section id="contatos">
-                <div class="titulo-principal">
-                    <h1>CONTATO</h1>
-                    <h3>Fale Conosco</h3>
-                </div>
+        <!-- SEÇÃO ENTRE EM CONTATO -->
+        <section id="contatos">
+            <div class="titulo-principal">
+                <h1>CONTATO</h1>
+                <h3>Fale Conosco</h3>
+            </div>
 
-                <article id="contato">
-                    <aside id="mensagem">
-                        <h4>Envie sua Mensagem ✉️</h4>
-                        <p style="margin-bottom: 2rem;">Fique à vontade para entrar em contao através do forumulário de 
+            <article id="contato">
+                <aside id="mensagem">
+                    <h4>Envie sua Mensagem ✉️</h4>
+                    <p style="margin-bottom: 2rem;">Fique à vontade para entrar em contao através do forumulário de
                         contato ou encontrar nossas informações de conato abaixo.
-                        Seu feedback, perguntas e sugestões são importantes para nós, 
+                        Seu feedback, perguntas e sugestões são importantes para nós,
                         pois nos esforçamos para fornecer um serviço excepcional à nossa
                         comunidade.</p>
-                        
-                        <p><span class="material-symbols-outlined">call</span> (11) 2484-5700</p>
-                        <p><span class="material-symbols-outlined">phone_iphone</span> Whatsapp: (11) 99112-6849</p>
-                        <p><span class="material-symbols-outlined">location_on</span> <a href="https://www.google.com/maps/place/R.+do+Poente,+148+-+Conj.+Marcos+Freire,+Guarulhos+-+SP,+07263-721/@-23.4617458,-46.4047928,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6256dec327e1:0xc43291410730ca1f!8m2!3d-23.4617458!4d-46.4047928!16s%2Fg%2F11c27g53_n?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">R. do Poente, 148 - Conj. Marcos Freire, Guarulhos - SP, 07263-721</a></p>
-                        <p><span class="material-symbols-outlined">pace</span> <strong>Horário de Funcionamento:</strong> 
-                            <ul id="horario">
-                                <li><span>Domingo:</span> 07:00 - 13:30</li>
-                                <li><span>Segunda Feira:</span> 15:00 - 18:00</li>
-                                <li><span>Terça-feira:</span> 15:00 - 18:00
-                                </li>
-                                <li><span>Quarta-feira:</span> 15:00 - 20:00
-                                </li>
-                                <li><span>Quinta-feira:</span> 15:00 - 18:00
-                                </li>
-                                <li><span>Sexta-feira:</span> 15:00 - 20:00
-                                </li>
-                            </ul>
-                        <p>
-                            <p>Siga as nossas Redes Sociais: </p>
-                            <div>
-                                <a href="https://www.instagram.com/cursinhocomunitariopimentas/" target="_blank"><img src="images/instagram.png" alt="" width="30px" title="Instagram"></a>
-                                <a href="https://www.facebook.com/cursinhocomunitariopimentascp" target="_blank"><img src="images/facebook.png" alt="" width="30px" title="Facebbok"></a>
-                                <a href="https://www.youtube.com/@cursinhopimentas" target="_blank"><img src="images/youtube.png" alt="" width="30px" title="Youtube"></a>
-                            </div>
-                    </aside>
-                    
-                    <aside id="form">
-                        <form action="" method="post">
-                            <label for="name">Nome: </label>
-                            <input type="text" name="name" id="name" placeholder="Digite seu nome">
 
-                            <label for="tel">Telefone: </label>
-                            <input type="tel" name="tel" id="tel" placeholder="Digite o seu número de telefone">
+                    <p><span class="material-symbols-outlined">call</span> (11) 2484-5700</p>
+                    <p><span class="material-symbols-outlined">phone_iphone</span> Whatsapp: (11) 99112-6849</p>
+                    <p><span class="material-symbols-outlined">location_on</span> <a
+                            href="https://www.google.com/maps/place/R.+do+Poente,+148+-+Conj.+Marcos+Freire,+Guarulhos+-+SP,+07263-721/@-23.4617458,-46.4047928,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6256dec327e1:0xc43291410730ca1f!8m2!3d-23.4617458!4d-46.4047928!16s%2Fg%2F11c27g53_n?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">R. do Poente, 148 - Conj. Marcos Freire, Guarulhos - SP, 07263-721</a></p>
+                    <p><span class="material-symbols-outlined">pace</span> <strong>Horário de Funcionamento:</strong>
+                    <ul id="horario">
+                        <li><span>Domingo:</span> 07:00 - 13:30</li>
+                        <li><span>Segunda Feira:</span> 15:00 - 18:00</li>
+                        <li><span>Terça-feira:</span> 15:00 - 18:00
+                        </li>
+                        <li><span>Quarta-feira:</span> 15:00 - 20:00
+                        </li>
+                        <li><span>Quinta-feira:</span> 15:00 - 18:00
+                        </li>
+                        <li><span>Sexta-feira:</span> 15:00 - 20:00
+                        </li>
+                    </ul>
+                    <p>
+                    <p>Siga as nossas Redes Sociais: </p>
+                    <div>
+                        <a href="https://www.instagram.com/cursinhocomunitariopimentas/" target="_blank"><img
+                                src="images/instagram.png" alt="" width="30px" title="Instagram"></a>
+                        <a href="https://www.facebook.com/cursinhocomunitariopimentascp" target="_blank"><img
+                                src="images/facebook.png" alt="" width="30px" title="Facebbok"></a>
+                        <a href="https://www.youtube.com/@cursinhopimentas" target="_blank"><img
+                                src="images/youtube.png" alt="" width="30px" title="Youtube"></a>
+                    </div>
+                </aside>
 
-                            <label for="msg">Mensagem: </label>
-                            <textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea>
+                <aside id="form">
+                    <form action="" method="post">
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome">
 
-                            <div id="botao">
-                                <input type="reset" id="reset" value="Limpar">
-                                <input type="submit" id="submit" value="Enviar">
-                            </div>
-                        </form>
-                    </aside>
-                </article>
-            </section>
+                        <label for="tel">Telefone: </label>
+                        <input type="tel" name="tel" id="tel" placeholder="Digite o seu número de telefone">
 
-            <!-- RODAPÉ DA PÁGINA -->
-            <footer>
-                <hr>
-                <div>
-                    <p>&copy 2024 Emilly, Fábio. Felipe e Milena. Todos os direitos reservados.</p>
-                    <p>Termos de Serviço</p>
-                    <p>Política de Privacidade</p>
-                </div>
-            </footer>
-        </main>
+                        <label for="msg">Mensagem: </label>
+                        <textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea>
+
+                        <div id="botao">
+                            <input type="reset" id="reset" value="Limpar">
+                            <input type="submit" id="submit" value="Enviar">
+                        </div>
+                    </form>
+                </aside>
+            </article>
+        </section>
+
+        <!-- RODAPÉ DA PÁGINA -->
+        <footer>
+            <hr>
+            <div>
+                <p>&copy 2024 Emilly, Fábio. Felipe e Milena. Todos os direitos reservados.</p>
+                <p>Termos de Serviço</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>

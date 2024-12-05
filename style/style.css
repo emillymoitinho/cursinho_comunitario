@@ -37,7 +37,7 @@
         grid-template-columns: 1fr 5fr;
         background-color: white;
         width: 100%;
-        height: 10vh;
+        height: 6rem;
         border-bottom: 5px solid red;
         z-index: 1;
     }
@@ -136,12 +136,11 @@
 
     /* SOBRE */
     section#about {
-        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 50vh;
+        height: 50rem;
     }
 
     article.container {
@@ -198,10 +197,10 @@
     /* GALERIA */
 
     section#galeria {
-        justify-content: center;
         text-align: center;
-        margin-top: 10rem;
+        margin-top: 8rem;
         margin-bottom: 10rem;
+        height: 50rem;
     }
 
     section#galeria h1{
@@ -249,6 +248,7 @@
     section#depoimentos {
         padding: 5rem;
         background-color: #F2F2F2;
+        height: 50rem;    
     }
 
     section#depoimentos > .titulo-principal p {
@@ -300,7 +300,7 @@
     /* noticias */
 
     section#noticias {
-        height: 80vh;
+        height: 50rem;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -357,7 +357,7 @@
     /* Fundador */
      section#fundador {
         margin-top: 5rem;
-        height: 70vh;
+        height: 50rem;
         font-size: 1.2rem;
      }
 

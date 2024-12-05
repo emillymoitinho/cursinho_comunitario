@@ -31,7 +31,6 @@ header img {
     border-radius: 20px;
 }
 
-
 form {
     position: relative;
     margin-bottom: 2rem;
@@ -44,91 +43,104 @@ form {
     box-shadow: 8px 13px 20px 0px #0000003d;
 }
 
-
-form p {
+form > p {
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-label#label-nome {
-    margin-top: 1.5rem;
-}
-
-label#label-mae {
-    margin-top: 1.5rem;
-}
-
-label#label-email {
-    margin-top: 1.5rem;
-}
-
-label#declaracao-matricula {
-    margin-top: 1.5rem;
-}
-
 input {
-    padding: 8px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px; 
 }
 
 input#nome-completo {
-    width: 80%;
+    width: 50%;
 }
 
 input#nome-mae {
     margin-bottom: 1.5rem;
-    width: 80%;
+    width: 50%;
 }
 
 input#nome-pai {
-    width: 80%;
+    width: 50%;
 }
 
 span#genero {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 input#email {
-    margin-bottom: 1.5rem;
-    width: 80%;
+    width: 50%;
 }
 
+input#endereco {
+    width: 40%;
+}
+
+input#bairro {
+    width: 5rem;
+}
+
+input#numero {
+    width: 3rem;
+}
+
+input#complemento {
+    width: 5rem;
+}
+
+input#cep {
+    width: 5rem;
+}
 
 .row {
     margin-top: 2rem;
+    margin-bottom: 2.5rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     width: 100%
 }
+
 .row div {
     width: 100%;
     flex: 1; 
 }
+
 .button-container {
     margin-top: 2rem;
     text-align: center;
     
 }
+
 #data-nascimento {
     width: auto; 
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 #rg {
     width: auto;
 }
+
 #cpf {
     width: auto
     
+}
+
+span#email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+span.tel {
+    color: #ec1111;
 }
 
 button {
@@ -143,16 +155,11 @@ button {
     font-size: 1.2rem;
 
 }
+
 button:hover {
     background-color: #d61313;
     transition: .3s;
 }
-
-span.pimenta {
-    position: absolute;
-    left: 43rem;
-}
-
 
 ::-webkit-scrollbar {
     width: 12px; 

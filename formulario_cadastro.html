@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +14,32 @@
     </header>
     <main>
         <!-- Formulário Inscrição -->
-        <form action="inscrição.jsp" method="post">
+        <form action="inscricao.jsp" method="post" accept-charset="UTF-8">
             <!-- Informações -->
             <h1>Inscrição Cursinho Comunitário Pimentas</h1>
             <p><strong>Preencha seus dados</strong></p>
             <p><strong>Em breve entraremos em contato</strong></p>
-            <p><strong>Em caso de dúvidas: (11) 2484-5700 ou (11) 99112-6849</strong></p>
+            <p><strong>Em caso de dúvidas: <span class="tel">(11) 2484-5700</span> ou <span class="tel">(11) 99112-6849</span></strong></p>
             </p>
             <!-- Input Nome Completo -->
-            <label for="nome-completo" id="label-nome">Nome Completo:</label>
-            <input type="text" id="nome-completo" name="nome-completo" required>
             <div class="row">
+                <label for="nome-completo" id="label-nome">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
+            <div class="row">
+                
                 <!-- Input Data de Nascimento -->
                 <label for="data-nascimento">Data de Nascimento:</label>
                 <input type="date" id="data-nascimento" name="data-nascimento" required>
+
                 <!-- Input Sexo -->
                 <span id="genero">
                     <p>Sexo: </p>
                     <label>
-                        <input type="radio" name="sexo" id="sexo" value="F"> Feminino
+                        <input type="radio" name="sexo" id="sexo-feminino" value="F" required> Feminino
                     </label>
                     <label>
-                        <input type="radio" name="sexo" id="sexo" value="M"> Masculino
+                        <input type="radio" name="sexo" id="sexo-masculino" value="M" required> Masculino
                     </label>
                 </span>
             </div>
@@ -45,45 +48,67 @@
                 <div>
                     <!-- Input RG -->
                     <label for="rg">Número do RG:</label>
-                    <input type="text" id="rg" name="rg" placeholder="xx.xxx.xxx-x" required>
+                    <input type="text" id="rg" name="rg" placeholder="xx.xxx.xxx-x" pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" 
+                    title="O RG deve estar no formato: xx.xxx.xxx-x"  required>
                 </div>
                 <div>
                     <!-- Input CPF -->
                     <label for="cpf">Número do CPF:</label>
-                    <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                    <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                    title="O CPF deve estar no formato: xxx.xxx.xxx-xx"  required>
                 </div>
             </div>
 
             <!-- Input Nome da Mãe -->
-            <label for="nome-mae" id="label-mae">Nome da Mãe:</label>
-            <input type="text" id="nome-mae" name="nome-mae" required>
+                <label for="nome-mae" id="label-mae">Nome da Mãe: </label>
+                <input type="text" id="nome-mae" name="nome-mae" required>
 
-            <label for="nome-pai">Nome do Pai:</label>
-            <input type="text" id="nome-pai" name="nome-pai">
+            <br>
 
             <!-- Input Nome do Pai -->
+            <label for="nome-pai">Nome do Pai: </label>
+            <input type="text" id="nome-pai" name="nome-pai" required>
+
             <div class="row">
+                <!-- Input Telefone -->
                 <label for="telefone">Telefone Fixo:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <!-- Input Celular -->
                 <label for="celular">Celular:</label>
                 <input type="cel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required>
             </div>
             <!-- Input Email -->
-            <label for="email" id="label-email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <span id="email">
+                <label for="email" id="label-email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </span>
 
             <br>
-            <!-- Input Comprovante de Endereco -->
-            <label for="comprovante-endereco">Faça upload do Comprovante de Endereço: </label>
-            <input type="file" name="comprovante-endereco" id="comprovante-endereco" accept=".pdf, .jpg">
+            <!-- Input Endereço -->
+                <div class="row">
+                    <label for="endereco">Endereço: </label>
+                    <input type="text" name="endereco" id="endereco" required>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" required>
+                </div>
 
-            <!-- Input Declaração da Matrícula -->
-            <label for="declaracao-matricula" id="declaracao-matricula">Faça upload do Certificado de conclusão do Ensino Médio / Declaração de Matricula: </label>
-           <input type="file" name="declaracao-matricula" id="declaracao-matricula" accept=".pdf, .jpg">
+            <div class="row">
+                <!-- Input CEP -->
+                <label for="cep">CEP: </label>
+                <input type="number" name="cep" id="cep" required>
+                <!-- Input Número -->
+                <label for="numero">Número: </label>
+                <input type="number" name="numero" id="numero" required>
+                <!-- Complemento -->
+                <label for="complemento">Complemento: </label>
+                <input type="text" name="complemento" id="complemento">
+            </div>
 
+            <!-- Botão inscrever -->
             <div class="button-container">
                 <button type="submit">Inscrever</button>
-            </div>
+            </div> 
         </form>
     </main>
 </body>

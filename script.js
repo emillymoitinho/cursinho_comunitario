@@ -1,0 +1,2 @@
+
+alert('Inscrito com Sucesso!!')
